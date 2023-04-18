@@ -1,0 +1,3 @@
+@mixin for-1024 {
+    @media (max-width: 992px) { @content; }
+}
