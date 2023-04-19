@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 let newSwiper = new Swiper(".prodTizer__slider", {
     // navigation: {
     //   nextEl: ".swiper-button-next",
