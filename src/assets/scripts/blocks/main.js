@@ -1,18 +1,42 @@
-let swiper = new Swiper(".prodTizer__slider", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+let newSwiper = new Swiper(".prodTizer__slider", {
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    speed: 1,
     loop:true,
     autoplay: {
       delay: 5000,
+      disableOnInteraction: true,
     },
+
+    
+      pauseOnMouseEnter:true,
+    rewind:true,
+    observer: true, 
+    observeParents: true,
+    watchSlidesProgress:true,
+    // threshold:30,
+    // cssMode:true,
     effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
+  
+    // fadeEffect: {
+    //   crossFade: true
+    // },
   });
 
+  newSwiper.setTransition(0)
+  $(".prodTizer__slider .swiper-button-next").click(function(){
+    newSwiper.slideNext(0);
+    swiper.updateProgress()
+
+  })
+  $(".prodTizer__slider .swiper-button-prev").click(function(){
+    newSwiper.slidePrev(0);
+    swiper.updateProgress()
+
+  })
 
   let tl = gsap.timeline()
   let tl2 = gsap.timeline()
@@ -48,8 +72,17 @@ let swiper = new Swiper(".prodTizer__slider", {
        ease: "none",
     }
   });
+
+  let st = ScrollTrigger.create({
+    trigger: ".aboutProd__images-list",
+    pin: ".aboutProd__images-list",
+    start: "center center",
+    end: "+=100",
+    // markers:true
+  });
+
   ScrollTrigger.matchMedia({
-    "(min-width: 320px) and (max-width: 1023px)": function minWidth320pxAndMaxWidth599px() {
+    "(min-width: 320px) and (max-width: 1023px)": function minWidth320pxAndMaxWidth1023px() {
       tl.to(".aboutProd__item--pink", 
       {
         backgroundImage: "linear-gradient(180deg, rgba(254,210,51,1) 0%, rgba(253,155,36,1) 100%)",
@@ -161,7 +194,7 @@ let swiper = new Swiper(".prodTizer__slider", {
      
     },
 
-    "(min-width: 1024px)": function minWidth1365pxAndMaxWidth2565px() {
+    "(min-width: 1024px)": function minWidth1024() {
       tl.to(".aboutProd__item--pink", 
       {
         backgroundImage: "linear-gradient(180deg, rgba(254,210,51,1) 0%, rgba(253,155,36,1) 100%)",
@@ -221,8 +254,8 @@ let swiper = new Swiper(".prodTizer__slider", {
         }
       });
       
+      
     
-   
     
       //  Вариант с пином элементов
       // let st = ScrollTrigger.create({
@@ -231,7 +264,9 @@ let swiper = new Swiper(".prodTizer__slider", {
       //   start: "top center",
       //   end: "+=300"
       // });
-    
+     //  Вариант с пином элементов
+     
+      
       tl.to(".newMethod__item--mask-1", 
       {
         // backgroundColor: "#F5F5F7",
@@ -290,3 +325,10 @@ let swiper = new Swiper(".prodTizer__slider", {
     },
  
   });
+  $(".drawPc__btn").click(function(){
+    $(this).toggleClass("js-active")
+    $(".drawConditions").slideToggle(400);
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 400);
+  })

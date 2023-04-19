@@ -1,4 +1,27 @@
-@@include('./assets/templates/template-header.html', { 'lang': 'ru', 'title': 'sk.ai | Главная' })
+<!DOCTYPE html>
+<html class="html" lang="ru" dir="ltr">
+
+    <!-- Head -->
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sk.ai | Главная</title>
+        <!-- / Meta -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/style.min.css">
+        <!-- / Styles -->
+
+    </head>
+    <!-- / Head -->
+
+    <!-- Body -->
+    <body class="body html__body">
+     
 <!--ProdTizer -->
 
 <div class="prodTizer">
@@ -297,10 +320,10 @@
         </div>
         <div class="aboutProd__options">
             <div class="aboutProd__images-list">
-                <img src="assets/images/pink-about.png" alt="" class="aboutProd__image aboutProd__image--1">
-                <img src="assets/images/blue-about.png" alt="" class="aboutProd__image aboutProd__image--2">
-                <img src="assets/images/purple-about.png" alt="" class="aboutProd__image aboutProd__image--3">
-                <img src="assets/images/orange-about.png" alt="" class="aboutProd__image aboutProd__image--4">
+                <picture><source srcset="assets/images/pink-about.webp" type="image/webp"><img src="assets/images/pink-about.png" alt="" class="aboutProd__image aboutProd__image--1"></picture>
+                <picture><source srcset="assets/images/blue-about.webp" type="image/webp"><img src="assets/images/blue-about.png" alt="" class="aboutProd__image aboutProd__image--2"></picture>
+                <picture><source srcset="assets/images/purple-about.webp" type="image/webp"><img src="assets/images/purple-about.png" alt="" class="aboutProd__image aboutProd__image--3"></picture>
+                <picture><source srcset="assets/images/orange-about.webp" type="image/webp"><img src="assets/images/orange-about.png" alt="" class="aboutProd__image aboutProd__image--4"></picture>
             </div>
             <div class="aboutProd__list">
                 <div class="aboutProd__item aboutProd__item--pink">
@@ -577,4 +600,13 @@
     </picture>
 </div>
 <!--end newMethod -->
-@@include('./assets/templates/template-footer.html')
+
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="./assets/scripts/script.min.js"></script>
+        <!-- / SCRIPTS -->
+        
+    </body>
+    <!-- / Body -->
+
+</html>

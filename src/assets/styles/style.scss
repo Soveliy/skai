@@ -17,6 +17,92 @@ body{
     margin: 0 auto;
     width: 90%;
 }
+.newBrench{
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(89.95deg, #56E575 -0.17%, #02FF54 99.76%);
+    border-radius: 32.5px;
+    padding: 5px 13px;
+    font-size: 20px;
+    line-height: 30px;
+    
+    @include for-1024(){
+        padding: 4px 10px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    color: #000;
+    svg{
+        height: 28px;
+        width: 28px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        @include for-1024(){
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+.newNavigation{
+    padding: 50px 0;
+    border-radius: 30px 0 0 0;
+    background-color: #000;
+    @include for-1024(){
+        padding: 27px 0 10px;
+        border-radius: 17px 0px 0px 0px;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+    }
+    &__back-btn{
+        display: flex;
+        align-items: center;
+        background: #F5F5F7;
+        border-radius: 36.5px;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 9.5px 12px;
+        margin-right: 20px;
+        
+        @include for-1024(){
+            padding: 5.5px 6px;
+            letter-spacing: -0.24px;
+            font-size: 15px;
+            line-height: 20px;
+            margin-right: 5px;
+        }
+     
+        svg{
+            height: 25px;
+            width: 34px;
+            margin-right: 9px;
+            flex-shrink: 0;
+            @include for-1024(){
+                height: 15px;
+                width: 20px;
+                margin-right: 6px;
+            }
+        }
+    }
+    &__category{
+        border: 2px solid #F5F5F7;
+        border-radius: 36.5px;
+        padding: 7.5px 12px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #F5F5F7;
+        @include for-1024(){
+            font-size: 15px;
+            line-height: 20px;
+            border: 1px solid  rgba(245, 245, 247, 0.5);
+            color: rgba(245, 245, 247, 0.5);
+
+            padding:4.5px 5px;
+        }
+
+    }
+}
 .prodTizer{
     position: relative;
     overflow: hidden;
@@ -49,6 +135,8 @@ body{
         }
         background-color: #000;
         border-radius: 30px 0px 30px 0px;
+        position: relative;
+        overflow: hidden;
         
         transition: none !important;
         @include for-1024(){
@@ -190,6 +278,9 @@ body{
             right: auto;
             border-radius: 32.5px;
             margin: 0;
+            &:hover{
+                opacity: .6;
+            }
             &.swiper-button-prev{
                 &:before{
                     background-image: url(../images/sliderArrowLeft.svg);
@@ -397,9 +488,10 @@ body{
         transform: translateY(20px);
         opacity: 0;
         transition: .4s;
+        background-repeat: no-repeat;
         @include for-1024(){
             margin-left: -13px;
-            padding: 9px 9px 10px 9px;
+            padding: 9px 9px 11px 9px;
             max-width: 312px;
         }
     }
@@ -632,6 +724,18 @@ body{
         left: 0;
         width: 100%;
     }
+    &__newBrench{
+        position: absolute;
+        left: 75px;
+        top: 15px;
+        transform: rotate(-7deg);
+        @include for-1024(){
+            left: auto;
+            transform: rotate(5deg);
+            right: 0;
+            top: -0;
+        }
+    }
     .container{
         position: relative;
         z-index: 10;
@@ -656,7 +760,7 @@ body{
         // justify-content: flex-end;
         padding: 100px 0;
         @include for-1024(){
-            padding: 60px 0;
+            padding: 40px 0;
         }
     }
     &__title{
@@ -709,9 +813,10 @@ body{
         @include for-1024(){
             padding: 20px 0 40px;
         }
-        img{
+        picture img{
             max-width: 100%;
             border-radius: 30px;
+            width: 100%;
             @include for-1024(){
                 border-radius: 20px;
             }
@@ -822,8 +927,10 @@ body{
         border-radius: 30px;
         color: rgba(0, 0, 0, 1);
         transition: .4s;
+        
         @include for-1024(){
             border-radius: 12px;
+            mask-position: top right;
         }
         &--isCurrent{
             color: rgba(73, 73, 73, 1);
@@ -898,6 +1005,295 @@ body{
         }
         img{
             margin-top: 25px;
+        }
+    }
+}
+
+.drawPc{
+    padding: 50px 0;
+    img{
+        width: 100%;
+    }
+    @include for-1024(){
+        padding: 20px 0;
+    }
+    &__hero{
+        position: relative;
+    }
+    &__title{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 80px;
+        /* or 114% */
+        
+        
+        /* SKAI Header Blue */
+        
+        background: linear-gradient(90deg, #77BBE8 0%, #C7A4EB 52.55%, #FF5238 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        max-width: 514px;
+        @include for-1024(){
+            font-size: 34px;
+            line-height: 41px;
+            /* or 121% */
+            
+            letter-spacing: 0.374px;
+            text-transform: lowercase;
+            max-width: 264px;
+            left: 20px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        position: absolute;
+        bottom: -11px;
+        right: 33px;
+        max-width: 548px;
+        @include for-1024(){
+            right: 20px;
+            max-width: 240px;
+            bottom: -3px;
+        }
+    }
+    &__desc{
+        font-size: 50px;
+        line-height: 48px;
+        /* or 96% */
+        
+        text-align: right;
+        
+        /* SKAI Header Blue */
+        
+        background: linear-gradient(90deg, #77BBE8 0%, #C7A4EB 52.55%, #FF5238 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        @include for-1024(){
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+    &__btn{
+        height: 111px;
+        width: 111px;
+        background: linear-gradient(90deg, #77BBE8 0%, #C7A4EB 52.55%, #FF5238 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-left: 30px;
+        transition: .4s;
+        @include for-1024(){
+            margin-left: 10px;
+        }
+        &:hover{
+            opacity: .8;
+        }
+        &.js-active{
+            transform: rotate(180deg);
+        }
+        cursor: pointer;
+        svg{
+            width: 55px;
+            @include for-1024(){
+                width: 30px;
+            }
+        }
+        @include for-1024(){
+            height: 55px;
+            width: 55px;
+        }
+
+    }
+}
+
+.drawConditions{
+    display: none;
+    padding: 50px 0;
+    @include for-1024(){
+        padding: 40px 0;
+    }
+    &__grid{
+        display: flex;
+        justify-content: space-between;
+        @include for-1024(){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        display: flex;
+        font-size: 24px;
+        line-height: 30px;
+        
+        color: #000000;
+        padding-right: 50px;
+        box-sizing: border-box;
+        @include for-1024(){
+            font-size: 12px;
+            line-height: 16px;
+            padding-right: 100px;
+        }
+        & + &{
+            margin-top: 20px;
+        }
+        span{
+            background: linear-gradient(90deg, #77BBE8 0%, #C7A4EB 52.55%, #FF5238 100%);
+            border-radius: 12.5px;
+            padding: 0 2px;
+        }
+        svg{
+            width: 52px;
+            height: 52px;
+            margin-right: 10px;
+            flex-shrink: 0;
+            @include for-1024(){
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+    &__title{
+        padding: 50px 0;
+        display: inline-flex;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 80px;
+        margin-top: 50px;
+        /* identical to box height, or 114% */
+        
+        
+        /* SKAI Header Blue */
+        
+        background: linear-gradient(90deg, #77BBE8 0%, #C7A4EB 52.55%, #FF5238 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        @include for-1024(){
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 26px;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    }
+    &__desc{
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        max-width: 660px;
+        @include for-1024(){
+            max-width: 100%;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        p + p{
+            margin-top: 30px;
+            @include for-1024(){
+                margin-top: 20px;
+            }
+        }
+    }
+    &__list{
+        max-width: 494px;
+        flex-shrink: 0;
+        @include for-1024(){
+            margin-top: 40px;
+            padding-left: 20px;
+        }
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -47px;
+        padding-top: 50px;
+        @include for-1024(){
+            margin: -20px 0;
+            padding: 20px 0 0 20px;
+        
+        }
+    }
+    &__item-container{
+        width: 33.3%;
+        padding: 0 47px;
+        box-sizing: border-box;
+        @include for-1024(){
+            width: 100%;
+            padding: 20px 0;
+        }
+    }
+    &__row-item{
+        display: flex;
+        align-items: flex-start;
+        &-icon{
+            width: 52px;
+            height: 52px;
+            margin-right: 10px;
+            flex-shrink: 0;
+            @include for-1024(){
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    &__row-item-content{
+        font-size: 24px;
+        line-height: 30px;
+        color: #494949;
+        @include for-1024(){
+            font-size: 12px;
+            line-height: 16px;
+        }
+        span{
+            background: linear-gradient(90deg, #77BBE8 0%, #C7A4EB 52.55%, #FF5238 100%);
+            border-radius: 12.5px;
+            padding: 0 2px;
+        }
+    }
+    &__btn{
+        display: inline-flex;
+        align-items: center;
+        margin-top: 15px;
+        padding-left: 22px;
+        background: linear-gradient(90deg, #77BBE8 0%, #C7A4EB 52.55%, #FF5238 100%);
+        border-radius: 32.5px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        @include for-1024(){
+            padding-left: 11px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &-icon{
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000000;
+            margin-left: 12px;
+            flex-shrink: 0;
+            @include for-1024(){
+                height: 28px;
+                width: 28px;
+            }
+            svg{
+                height: 20px;
+                fill: #F5F5F7;
+                @include for-1024(){
+                    height: 14px;
+                }
+            }
         }
     }
 }
