@@ -1,4 +1,51 @@
 @@include('./assets/templates/template-header.html', { 'lang': 'ru', 'title': 'sk.ai | Главная' })
+<svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="mouse">
+      <rect x="37.0718" y="11.5" width="29" height="22.1429" rx="11.0714" transform="rotate(90 37.0718 11.5)" stroke="black" stroke-width="3" stroke-linejoin="round"></rect>
+      <line x1="25.8574" y1="17.8569" x2="25.8574" y2="21.5712" stroke="#77BBE8" stroke-width="2" stroke-linecap="round"></line>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="pc">
+      <rect x="11.5" y="16.0713" width="29" height="15.2857" rx="2.5" stroke="black" stroke-width="3" stroke-linejoin="round"></rect>
+      <line x1="19" y1="36.4282" x2="33" y2="36.4282" stroke="#77BBE8" stroke-width="2" stroke-linecap="round"></line>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="list">
+      <rect x="11.5" y="6.63599" width="29" height="37" rx="2.5" stroke="black" stroke-width="3" stroke-linejoin="round"></rect>
+      <line x1="18.2725" y1="16.9932" x2="33.727" y2="16.9932" stroke="#77BBE8" stroke-width="2" stroke-linecap="round"></line>
+      <line x1="22.6362" y1="22.7075" x2="29.3635" y2="22.7075" stroke="#77BBE8" stroke-width="2" stroke-linecap="round"></line>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 76" id="arrow">
+      <path d="M28.5053 75.0268C29.4973 74.9881 30.6442 74.5797 31.3672 73.8993L54.9545 51.6988C56.3066 50.1948 56.8641 47.3096 55.301 45.6285C53.7612 43.9725 50.7763 44.0219 49.2307 45.6711L32.6669 61.2804L32.6669 4.26408C32.6669 1.96547 30.8038 0.101332 28.5041 0.101332C26.2055 0.101333 24.3414 1.96539 24.3414 4.26408L24.3414 61.2804L7.7776 45.6711C6.35487 44.2503 3.26451 43.988 1.70729 45.6285C0.150018 47.268 0.647508 50.2558 2.05377 51.6988L25.641 73.8993C26.4482 74.6591 27.398 75.0288 28.5053 75.0268Z" fill="#F5F5F7"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="mess">
+      <path d="M20.7513 27.6266C21.6489 27.6266 22.3764 26.8991 22.3764 26.0015C22.3764 25.104 21.6489 24.3765 20.7513 24.3765C19.8537 24.3765 19.126 25.104 19.126 26.0015C19.126 26.8991 19.8537 27.6266 20.7513 27.6266Z" fill="black"></path>
+      <path d="M28.8766 26.0015C28.8766 26.8991 28.1491 27.6266 27.2515 27.6266C26.354 27.6266 25.6265 26.8991 25.6265 26.0015C25.6265 25.104 26.354 24.3765 27.2515 24.3765C28.1491 24.3765 28.8766 25.104 28.8766 26.0015Z" fill="black"></path>
+      <path d="M33.752 27.6266C34.6496 27.6266 35.3774 26.8991 35.3774 26.0015C35.3774 25.104 34.6496 24.3765 33.752 24.3765C32.8544 24.3765 32.127 25.104 32.127 26.0015C32.127 26.8991 32.8544 27.6266 33.752 27.6266Z" fill="black"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M28.8766 11.375H25.6264C17.5485 11.375 11 17.9235 11 26.0014V39.003C11 39.9005 11.7275 40.628 12.6251 40.628H28.8764C36.9544 40.628 43.5029 34.0796 43.5029 26.0016C43.5029 17.9236 36.9544 11.3751 28.8764 11.3751L28.8766 11.375ZM25.6264 14.6254H28.8766C35.1595 14.6254 40.2532 19.7185 40.2532 26.0013C40.2532 32.2841 35.1597 37.3772 28.8766 37.3772H14.2501V26.0013C14.2501 19.7184 19.3436 14.6254 25.6267 14.6254H25.6264Z" fill="black"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="teleg">
+      <path d="M11.5232 24.8251C11.5232 24.8251 26.1183 18.4865 31.1801 16.2546C33.1206 15.3618 39.701 12.5049 39.701 12.5049C39.701 12.5049 42.7382 11.2551 42.485 14.2904C42.4006 15.5404 41.7257 19.9149 41.0508 24.6466C40.0384 31.3424 38.9417 38.663 38.9417 38.663C38.9417 38.663 38.7729 40.7165 37.3388 41.0736C35.9046 41.4307 33.5423 39.8238 33.1206 39.4666C32.783 39.1988 26.7932 35.1813 24.5997 33.2172C24.0091 32.6815 23.3342 31.6103 24.684 30.3603C27.7212 27.4142 31.3488 23.7539 33.5423 21.4327C34.5547 20.3613 35.567 17.8616 31.3488 20.8969C25.359 25.2716 19.4535 29.3783 19.4535 29.3783C19.4535 29.3783 18.1036 30.271 15.5727 29.4675C13.0417 28.6641 10.0889 27.5927 10.0889 27.5927C10.0889 27.5927 8.06425 26.2536 11.5232 24.8251Z" fill="black"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="check">
+      <path d="M11 14.76C11 12.6834 12.6834 11 14.76 11H17.02C17.8484 11 18.52 10.3284 18.52 9.5C18.52 8.67157 17.8484 8 17.02 8H13.26C10.355 8 8 10.355 8 13.26V17.02C8 17.8484 8.67157 18.52 9.5 18.52C10.3284 18.52 11 17.8484 11 17.02V14.76Z" fill="black"></path>
+      <path d="M33.48 9.5C33.48 10.3284 34.1516 11 34.98 11H37.24C39.3166 11 41 12.6834 41 14.76V17.02C41 17.8484 41.6716 18.52 42.5 18.52C43.3284 18.52 44 17.8484 44 17.02V13.26C44 10.355 41.645 8 38.74 8H34.98C34.1516 8 33.48 8.67157 33.48 9.5Z" fill="black"></path>
+      <path d="M18.52 42.5C18.52 41.6716 17.8484 41 17.02 41H14.76C12.6834 41 11 39.3166 11 37.24V34.98C11 34.1516 10.3284 33.48 9.5 33.48C8.67157 33.48 8 34.1516 8 34.98V38.74C8 41.645 10.355 44 13.26 44H17.02C17.8484 44 18.52 43.3284 18.52 42.5Z" fill="black"></path>
+      <path d="M41 37.24C41 39.3166 39.3166 41 37.24 41H34.98C34.1516 41 33.48 41.6716 33.48 42.5C33.48 43.3284 34.1516 44 34.98 44H38.74C41.645 44 44 41.645 44 38.74V34.98C44 34.1516 43.3284 33.48 42.5 33.48C41.6716 33.48 41 34.1516 41 34.98V37.24Z" fill="black"></path>
+      <rect x="23" y="14" width="6" height="23" rx="3" fill="black"></rect>
+      <rect x="23" y="14" width="6" height="12" rx="3" fill="#77BBE8"></rect>
+    </symbol>
+  
+    <symbol id="arrowRight" width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M26.6616 9.81694C26.648 9.46838 26.5045 9.06542 26.2655 8.81138L18.4653 0.523963C17.9368 0.0489113 16.9231 -0.14696 16.3325 0.402226C15.7506 0.943248 15.768 1.992 16.3474 2.53504L21.8318 8.35475L1.79903 8.35475C0.991403 8.35475 0.336436 9.00935 0.336436 9.81734C0.336436 10.625 0.991378 11.2799 1.79903 11.2799L21.8318 11.2799L16.3474 17.0996C15.8482 17.5995 15.7561 18.6853 16.3325 19.2324C16.9085 19.7796 17.9583 19.6048 18.4653 19.1107L26.2655 10.8233C26.5324 10.5397 26.6623 10.206 26.6616 9.81694Z"/>
+    </symbol>
+    <symbol id="arrowLeft" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 25">
+        <path d="M3.42005e-06 12.5038C0.0175711 12.9507 0.202913 13.4673 0.511665 13.793L10.5859 24.418C11.2684 25.027 12.5777 25.2781 13.3405 24.574C14.092 23.8804 14.0696 22.5359 13.3212 21.8396L6.2379 14.3784L32.111 14.3784C33.1541 14.3784 34 13.5392 34 12.5033C34 11.4679 33.1541 10.6282 32.111 10.6282L6.2379 10.6282L13.3212 3.16693C13.9659 2.52606 14.0849 1.13399 13.3405 0.432535C12.5965 -0.268944 11.2407 -0.0448476 10.5859 0.588607L0.511665 11.2136C0.1669 11.5772 -0.000873558 12.005 3.42005e-06 12.5038Z" fill="black"></path>
+      </symbol>
+  
+  
+      <symbol id="chatGpt" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 27" >
+      <path d="M25.0531 7.87345C25.1309 6.90782 24.9942 5.93287 24.6624 5.02619C24.3291 4.11355 23.7993 3.2886 23.1107 2.59897C22.0869 1.54953 20.7545 0.857338 19.2963 0.609571C17.8397 0.367772 16.3434 0.580403 15.016 1.23291C14.2034 0.688869 13.2878 0.323176 12.3207 0.160959C11.3537 -0.00125769 10.3607 0.0398664 9.41299 0.285448C7.97853 0.641189 6.69485 1.44138 5.7434 2.56405C4.79194 3.68671 4.23018 5.07924 4.12779 6.53359C3.24489 6.95961 2.45856 7.56443 1.82326 8.30889C1.18946 9.05932 0.726337 9.92539 0.461137 10.8621C0.050492 12.2673 0.0992004 13.7597 0.605914 15.1301C1.11263 16.5006 2.04567 17.6745 3.27067 18.4763C3.19285 19.442 3.32961 20.4169 3.66138 21.3236C3.99466 22.2362 4.52446 23.0612 5.21306 23.7508C6.23687 24.8002 7.56926 25.4924 9.02743 25.7402C10.4841 25.982 11.9804 25.7694 13.3078 25.1169C14.1204 25.6609 15.036 26.0266 16.003 26.1888C16.9701 26.351 17.963 26.3099 18.9108 26.0643C20.3452 25.7086 21.6289 24.9084 22.5804 23.7857C23.5318 22.6631 24.0996 21.269 24.1945 19.8102C25.0774 19.3842 25.8637 18.7794 26.499 18.0349C27.1328 17.2845 27.5959 16.4184 27.8611 15.4817C28.2718 14.0765 28.217 12.5856 27.7164 11.2137C27.2127 9.85519 26.2796 8.68126 25.0531 7.87345ZM18.4829 24.3439C17.3039 24.6415 16.0648 24.5225 14.9695 24.0054C15.0058 23.9708 15.0693 23.9167 15.1041 23.8762L19.6791 19.4771C19.7925 19.3659 19.8803 19.2295 19.9197 19.0798C19.9652 18.9287 19.9638 18.7703 19.9246 18.6151L18.0489 11.1843L20.6356 11.9027C20.6492 11.9056 20.6628 11.9085 20.6718 11.9189C20.6809 11.9293 20.69 11.9397 20.693 11.9517L22.2478 18.1112C22.5792 19.4243 22.3666 20.824 21.6584 21.9932C20.9548 23.1549 19.8116 24.0021 18.4829 24.3439ZM6.52126 22.5127C5.68167 21.658 5.1657 20.5312 5.082 19.3333C5.13035 19.3465 5.2074 19.3715 5.26331 19.3891L11.378 21.0899C11.5306 21.1339 11.6923 21.1376 11.8495 21.0979C12.0067 21.0582 12.1473 20.9783 12.2608 20.8671L17.846 15.5019L18.4954 18.0744C18.4984 18.0863 18.5014 18.0982 18.4984 18.1117C18.4953 18.1252 18.4923 18.1386 18.4817 18.1477L13.8538 22.5919C12.8647 23.5399 11.5374 24.0654 10.1637 24.0503C8.78998 24.0352 7.48015 23.4833 6.52126 22.5127ZM2.21079 11.3474C2.54266 10.1907 3.27338 9.18723 4.27889 8.50804C4.29094 8.55579 4.31053 8.63338 4.32409 8.6871L5.86233 14.781C5.9015 14.9362 5.97545 15.0763 6.08719 15.1877C6.19894 15.2992 6.33489 15.3792 6.48749 15.4232L13.95 17.4948L12.0141 19.3548C12.0035 19.3639 11.9929 19.3729 11.9808 19.3759C11.9688 19.379 11.9567 19.382 11.9431 19.3791L5.76034 17.6638C4.43979 17.2987 3.32516 16.4246 2.65962 15.2403C1.99408 14.056 1.83347 12.6553 2.21079 11.3474ZM21.8438 10.931L14.3814 8.85939L16.3172 6.99938C16.3278 6.99036 16.3384 6.98134 16.3505 6.97828C16.3626 6.97523 16.3747 6.97218 16.3883 6.9751L22.571 8.69046C23.5183 8.95289 24.3657 9.48181 25.0241 10.2045C25.6764 10.9287 26.1079 11.8229 26.2613 12.7873C26.4207 13.7501 26.29 14.7355 25.9054 15.6325C25.5148 16.5311 24.8735 17.3024 24.06 17.8506L24.0133 17.6656L22.4735 11.5657C22.4359 11.4165 22.3604 11.2705 22.2487 11.159C22.1369 11.0475 22.001 10.9676 21.8438 10.931ZM23.2493 7.0209C23.201 7.0077 23.1239 6.98271 23.068 6.96508L16.9533 5.26429C16.8007 5.22028 16.639 5.21665 16.4818 5.25633C16.3246 5.29602 16.184 5.37595 16.0705 5.48712L10.4929 10.8568L9.84351 8.2843C9.84049 8.27236 9.83748 8.26042 9.84051 8.24696C9.84355 8.2335 9.84658 8.22003 9.85717 8.21101L14.4851 3.7668C15.1944 3.0862 16.0803 2.6213 17.0462 2.42194C18.012 2.22258 19.0139 2.29347 19.931 2.63973C20.8526 2.9785 21.6531 3.5764 22.2419 4.35471C22.8277 5.12109 23.1775 6.04859 23.2493 7.0209ZM10.2779 15.1775L7.6912 14.459C7.6776 14.4561 7.664 14.4532 7.65495 14.4428C7.64589 14.4324 7.63683 14.422 7.63381 14.41L6.079 8.25047C5.84095 7.30743 5.87951 6.31362 6.19306 5.39008C6.50661 4.46653 7.07699 3.64322 7.84066 3.02508C8.60432 2.40694 9.52801 2.01506 10.5074 1.89481C11.4868 1.77457 12.4795 1.93665 13.3633 2.35481C13.327 2.38937 13.2695 2.44197 13.2287 2.48402L8.65373 6.88312C8.5403 6.99429 8.45254 7.13072 8.41313 7.28035C8.36768 7.4315 8.36906 7.58987 8.40824 7.74505L10.2779 15.1775ZM10.8394 12.2549L13.3287 9.86156L16.6543 10.7808L17.4905 14.0933L15.0026 16.4927L11.677 15.5735L10.8394 12.2549Z" fill="black"></path>
+    </symbol>
+  </svg>
 <!--ProdTizer -->
 
 <div class="prodTizer">
@@ -32,10 +79,12 @@
                                 <li class="prodTizer-item__list-elem">клубника-киви</li>
                                 <li class="prodTizer-item__list-elem">грейпфрут лесные ягоды</li>
                             </ul>
-                            <video class="prodTizer-item__video"  autoplay muted loop>
-                                <source src="./assets/video/Data.mov">
-                                <source src="./assets/video/Data.webm">
-                            </video>
+                            
+                                <video class="prodTizer-item__video"  autoplay loop muted playsinline>
+                                    <source src="./assets/video/Data.mov" type='video/mp4; codecs="hvc1"'>
+                                    <source src="./assets/video/Data.webm" type="video/webm">
+                                </video>
+                           
                            
                         </div>
                         
@@ -79,9 +128,9 @@
                                 <li class="prodTizer-item__list-elem">клубника-киви</li>
                                 <li class="prodTizer-item__list-elem">грейпфрут лесные ягоды</li>
                             </ul>
-                            <video class="prodTizer-item__video"  autoplay muted loop>
-                                <source src="./assets/video/Hybrid.mov">
-                                <source src="./assets/video/Hybrid.webm">
+                            <video class="prodTizer-item__video"  autoplay muted loop playsinline>
+                                <source src="./assets/video/Hybrid.mov" type='video/mp4; codecs="hvc1"'>
+                                <source src="./assets/video/Hybrid.webm" type="video/webm">
                             </video>
                            
                         </div>
@@ -127,9 +176,9 @@
                                 <li class="prodTizer-item__list-elem">клубника-киви</li>
                                 <li class="prodTizer-item__list-elem">грейпфрут лесные ягоды</li>
                             </ul>
-                            <video class="prodTizer-item__video"  autoplay muted loop>
-                                <source src="./assets/video/Algotithm.mov">
-                                <source src="./assets/video/Algotithm.webm">
+                            <video class="prodTizer-item__video"  autoplay muted loop playsinline>
+                                <source src="./assets/video/Algotithm.mov" type='video/mp4; codecs="hvc1"'>
+                                <source src="./assets/video/Algotithm.webm" type="video/webm">
                             </video>
                            
                         </div>
@@ -174,9 +223,9 @@
                                 <li class="prodTizer-item__list-elem prodTizer-item__list-elem--isCurrent">клубника-киви</li>
                                 <li class="prodTizer-item__list-elem">грейпфрут лесные ягоды</li>
                             </ul>
-                            <video class="prodTizer-item__video"  autoplay muted loop>
-                                <source src="./assets/video/Dualiry.mov">
-                                <source src="./assets/video/Dualiry.webm">
+                            <video class="prodTizer-item__video"  autoplay muted loop playsinline>
+                                <source src="./assets/video/Dualiry.mov" type='video/mp4; codecs="hvc1"'>
+                                <source src="./assets/video/Dualiry.webm" type="video/webm">
                             </video>
                            
                         </div>
@@ -222,9 +271,9 @@
                                 <li class="prodTizer-item__list-elem">клубника-киви</li>
                                 <li class="prodTizer-item__list-elem prodTizer-item__list-elem--isCurrent">грейпфрут лесные ягоды</li>
                             </ul>
-                            <video class="prodTizer-item__video"  autoplay muted loop>
-                                <source src="./assets/video/Paradox.mov">
-                                <source src="./assets/video/Paradox.webm">
+                            <video class="prodTizer-item__video"  autoplay muted loop playsinline>
+                                <source src="./assets/video/Paradox.mov" type='video/mp4; codecs="hvc1"'>
+                                <source src="./assets/video/Paradox.webm" type="video/webm">
                             </video>
                            
                         </div>
@@ -257,6 +306,7 @@
         </div>
    
 </div>
+<!-- br чисто для отделения блоков-->
  <br>
  <br>
 <!--end ProdTizer -->     
@@ -265,7 +315,7 @@
         <div class="newNavigation__row">
             <a href="#" class="newNavigation__back-btn">
                 <svg>
-                    <use xlink:href="/assets/images/spriteNew.svg#arrowLeft"></use>
+                    <use xlink:href="#arrowLeft"></use>
                 </svg>
                 линейки
             </a>
@@ -319,11 +369,22 @@
             
         </div>
        
+       
     </div>
     <div class="aboutProd__logo-container">
         <img class="aboutProd__logo" src="assets/images/ska-logo.svg" alt="">
     </div>
-   
+    <div class="aboutProd__bottom">
+       <div class="container">
+        <div class="newBrench aboutProd__newBrench">
+            <svg>
+                <use xlink:href="#chatGpt"></use>
+            </svg>
+            изображения созданы нейросетью
+        </div>
+       </div>
+    </div>
+  
 </div>
 <!--end aboutProd -->
 
@@ -343,7 +404,7 @@
                
                 <div class="drawPc__btn">
                     <svg>
-                        <use xlink:href="/assets/images/spriteNew.svg#arrow"></use>
+                        <use xlink:href="#arrow"></use>
                     </svg>
                 </div>
             </div>
@@ -364,7 +425,7 @@
             <ul class="drawConditions__list">
                 <li class="drawConditions__item">
                     <svg>
-                        <use xlink:href="/assets/images/spriteNew.svg#list"></use>
+                        <use xlink:href="#list"></use>
                     </svg>
                     <div class="drawConditions__item-text">
                         мощный игровой компьютер <span>HYPERPC CYBER</span>
@@ -373,7 +434,7 @@
                 </li>
                 <li class="drawConditions__item">
                     <svg>
-                        <use xlink:href="/assets/images/spriteNew.svg#pc"></use>
+                        <use xlink:href="#pc"></use>
                     </svg>
                     <div class="drawConditions__item-text">
                         монитор <span> ACER Nitro</span> (28 дюймов) для ярких впечатлений
@@ -382,7 +443,7 @@
                 </li>
                 <li class="drawConditions__item">
                     <svg>
-                        <use xlink:href="/assets/images/spriteNew.svg#mouse"></use>
+                        <use xlink:href="#mouse"></use>
                     </svg>
                     <div class="drawConditions__item-text">
                         стильные клавиатура и мышь <span>A4Tech Bloody Q1300</span>
@@ -398,7 +459,7 @@
             <div class="drawConditions__item-container">
                 <div class="drawConditions__row-item">
                     <svg class="drawConditions__row-item-icon">
-                        <use xlink:href="/assets/images/spriteNew.svg#check"></use>
+                        <use xlink:href="#check"></use>
                     </svg>
                     <div class="drawConditions__row-item-content">
                        <p>
@@ -410,7 +471,7 @@
             <div class="drawConditions__item-container">
                 <div class="drawConditions__row-item">
                     <svg class="drawConditions__row-item-icon">
-                        <use xlink:href="/assets/images/spriteNew.svg#mess"></use>
+                        <use xlink:href="#mess"></use>
                     </svg>
                     <div class="drawConditions__row-item-content">
                         <p>
@@ -421,7 +482,7 @@
                             Перейти к посту
                             <div class="drawConditions__btn-icon">
                                 <svg class="">
-                                    <use xlink:href="/assets/images/spriteNew.svg#arrowRight"></use>
+                                    <use xlink:href="#arrowRight"></use>
                                 </svg>
                             </div>
                         </a>
@@ -432,7 +493,7 @@
             <div class="drawConditions__item-container">
                 <div class="drawConditions__row-item">
                     <svg class="drawConditions__row-item-icon">
-                        <use xlink:href="/assets/images/spriteNew.svg#teleg"></use>
+                        <use xlink:href="#teleg"></use>
                     </svg>
                     <div class="drawConditions__row-item-content">
                        <p>
@@ -465,7 +526,7 @@
         <div class="newMethod__image-container">
             <div class="newBrench newMethod__newBrench">
                 <svg>
-                    <use xlink:href="/assets/images/spriteNew.svg#chatGpt"></use>
+                    <use xlink:href="#chatGpt"></use>
                 </svg>
                 изображения созданы нейросетью
             </div>
@@ -576,5 +637,106 @@
         <img class="newMethod__bg" src="assets/images/newMethodbg_mob.png" alt="">
     </picture>
 </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum possimus reprehenderit magnam iure sint, suscipit omnis accusamus aspernatur qui laudantium blanditiis eos recusandae sapiente eaque ipsam quisquam dolores? Earum!
+Aperiam laudantium molestiae corrupti amet ab. Impedit blanditiis quod beatae cupiditate, quibusdam saepe nostrum ipsam odit vero cumque, atque aliquam quaerat fugit magni placeat, magnam ratione eum ex molestiae ea.
+Ab aspernatur consectetur id minus pariatur nam aliquid nobis excepturi fuga obcaecati alias necessitatibus eaque dolor, magni laboriosam cum commodi veniam. Est deserunt ullam eos cum? Aliquam suscipit corrupti optio.
+Minima molestiae ut quasi. Commodi laudantium nisi earum aliquid totam repellendus laboriosam dolore sit itaque quas placeat quae, ut consectetur consequuntur numquam odio officiis delectus nesciunt rem inventore iure deserunt.
+Enim, aperiam exercitationem excepturi incidunt unde alias perspiciatis, facere explicabo dignissimos similique eligendi nisi voluptatum atque eveniet ratione cum nobis odit dolor, nulla id corporis autem esse quam labore? Eligendi.
+Totam quaerat eveniet distinctio amet iure mollitia. Tempore molestiae reiciendis, corrupti, quo consectetur adipisci repudiandae optio facilis fuga corporis repellat neque earum, dignissimos harum a? Enim earum iste cum laudantium?
+Id ducimus illo incidunt autem quaerat, magni quibusdam sint obcaecati ipsam repellat velit quidem maxime sit asperiores ut alias eligendi! Magni deleniti voluptatum sit. Excepturi quisquam laudantium quo. Aliquam, iusto.
+Ipsam, libero accusantium aut illum soluta labore veniam cumque, suscipit delectus, nam ipsum officiis eum architecto magni assumenda voluptates numquam officia? Amet eveniet voluptas sequi ad, porro doloremque natus perspiciatis.
+Fugiat, dolorem maxime. Explicabo quis a consectetur vero dicta nobis nisi est facilis possimus, eius accusamus esse, fugiat voluptates libero recusandae totam veritatis sequi ex dolore corporis officiis ipsam quos.
+Recusandae veniam, quidem repudiandae ducimus fuga velit excepturi maxime! Vero laudantium, perspiciatis est deleniti error eligendi sit quos, eum velit ipsum autem neque illo nesciunt quisquam alias rerum ipsam porro?
+Saepe sequi debitis perspiciatis. Unde harum magnam molestias veniam, animi molestiae? Dolor eius, eos qui alias nihil, veritatis itaque quisquam ipsa doloremque quibusdam sit ad, iusto vel velit ea dolore.
+Veniam dolor saepe quia voluptatibus odit adipisci, sit nostrum quam illum vel neque nesciunt omnis iure vero! Earum possimus, laboriosam accusamus incidunt ducimus cumque, perferendis, tempora animi dicta id inventore.
+Vitae blanditiis iste quibusdam at dicta ab corrupti ipsum corporis cumque ratione possimus dolores provident, nam amet nemo consectetur incidunt sequi consequuntur illo soluta ullam. Iste hic nesciunt voluptas eius?
+Aliquam veritatis facilis odit repellat accusantium ut nam molestiae ipsam nihil, magni nostrum sit quisquam et culpa in quaerat? Animi, quam sapiente? Odio quos vel ipsam. Molestiae, repellendus! Vero, omnis.
+Reprehenderit laudantium officia possimus quis quaerat asperiores, hic placeat, doloremque, voluptatibus deserunt voluptatum incidunt harum veniam culpa minus soluta iusto! Natus, fugit mollitia? Voluptatibus voluptates ipsam corporis, ipsum dolorem nostrum!
+Hic quibusdam itaque tenetur inventore porro expedita enim reprehenderit aliquid odio magni, at voluptate! Laborum at ullam similique neque a laudantium sit facilis? Odit minus vero repellendus, quo alias exercitationem.
+Dolores ut reiciendis hic eos quam, laudantium similique, exercitationem tenetur officiis rem non, repudiandae at dolor. Facilis aliquid animi voluptatibus tenetur neque sed officia nulla, quo incidunt sit. Officia, ipsam?
+Autem repellendus enim dicta, id iste animi quia vero ipsa blanditiis excepturi hic corrupti magnam minus officiis accusantium impedit, consequuntur expedita nulla facere deleniti nihil omnis numquam exercitationem. Tempora, eos.
+Placeat magnam sed repellat dignissimos a, molestias ipsa obcaecati veniam excepturi odio eligendi iure quia magni sequi! Odio nesciunt inventore a perspiciatis placeat, officiis, veritatis voluptatem sed, eos quibusdam consequatur!
+Magnam omnis veniam aliquam quisquam corrupti voluptatibus exercitationem alias voluptas quam. Id delectus quos fuga recusandae possimus ratione porro itaque, odit deserunt, minima illum dolorem architecto facilis rem fugit odio?
+Illum numquam, similique ipsum dolorem dolor aliquid possimus explicabo est ipsa perferendis, assumenda voluptates laboriosam sit recusandae iste ad officia maxime ex mollitia vel? Id tempore a doloremque quis cupiditate?
+Eveniet eligendi distinctio quo nihil aspernatur. Porro, est? Porro voluptate numquam, rem ea aut sapiente a obcaecati sint, id nulla autem est laborum maxime ducimus, magnam voluptates consequatur ipsam. Deserunt?
+Incidunt vitae culpa officia odio tempore ipsam maxime quo excepturi recusandae distinctio maiores laudantium commodi, ducimus nesciunt magni voluptas, tenetur dolorem explicabo aperiam. Laudantium voluptatibus ipsa blanditiis consequatur dicta. Minus.
+Doloribus natus laudantium dolores quae ea vel dolor totam sit reiciendis aut ducimus quisquam in pariatur, eveniet eos voluptatem tempora amet iusto consequatur. Optio excepturi animi suscipit iusto voluptate corrupti!
+Reiciendis expedita voluptate, quam quae magnam sapiente. Optio dignissimos maxime corporis, eius exercitationem itaque maiores, a ipsam, consequuntur id similique libero! Sint a animi sit deleniti quas optio consectetur expedita.
+Beatae minima incidunt iste explicabo voluptates sapiente, eius odit magnam delectus inventore natus cumque nam suscipit odio nesciunt voluptatem ea ad maiores nisi obcaecati numquam provident. Dolorem, ipsam? Nostrum, quis.
+Voluptates voluptatum ex quasi vel laborum. Eius cumque, ea consectetur repellendus doloribus ipsa excepturi voluptates laboriosam quisquam unde dolore eos similique sed corporis fugiat ex deserunt. Id molestias libero quas?
+Nemo, quo repellat suscipit, veritatis explicabo dolorem velit molestias reiciendis libero consequuntur rerum itaque laboriosam omnis tempore? Rerum, laboriosam! Quis recusandae libero expedita dolore suscipit? Id porro modi quo a?
+Delectus quaerat adipisci harum dolores quod neque, alias cum culpa ab itaque laboriosam voluptates corporis quas sunt aut aliquam? Dolorum illo deleniti odio laboriosam ratione voluptate dolore modi nobis iure.
+Corrupti facilis itaque nulla! Est, recusandae, corporis aliquid ad dolor velit fuga possimus accusantium, nulla doloribus id maiores vitae consequuntur voluptatum! Debitis voluptatem quam, quae porro odit alias optio? Eius!
+Modi voluptatum aliquam, et ipsa sed nesciunt autem dolores, incidunt, delectus culpa quae! Assumenda architecto impedit ullam odit laudantium repellat! Minus commodi incidunt omnis nam porro tempora perspiciatis dolorum rem.
+Veritatis aliquam rem doloribus asperiores ipsum quae corrupti a ipsa eius blanditiis eos culpa, sed dignissimos earum! Impedit, fuga iusto autem minus distinctio quidem sapiente, rem quas incidunt totam illo.
+Qui repellat sunt velit mollitia unde natus id sint eveniet nemo. Perspiciatis qui nesciunt deleniti pariatur quam earum eos provident natus? Fugit inventore et quidem nesciunt, ducimus laborum vitae excepturi!
+Consectetur in corporis suscipit debitis fugiat, facilis ducimus excepturi, vitae nobis, molestiae placeat pariatur voluptatem libero iste reprehenderit voluptas eveniet deleniti quos molestias facere quaerat! Quia doloribus saepe unde illum!
+Molestiae id reprehenderit, nam excepturi, velit nemo voluptatum accusantium quisquam minima vel rem? Voluptatibus harum quos rerum sapiente obcaecati veniam eius commodi aliquam libero, quia voluptatem. Ut maiores quidem esse?
+Nulla, facere? Eveniet deserunt iure aliquid exercitationem nam tempora laudantium quis architecto nostrum esse reprehenderit magni aut commodi, nesciunt doloremque dolores voluptatibus natus repellendus vero non? Corporis tempore totam aliquid.
+Tenetur ut nulla fugit ipsam repellat maiores deserunt delectus modi, ea iusto blanditiis quia rem animi sit. Sunt nihil, laboriosam in libero porro delectus debitis sit, facere ullam vitae recusandae?
+Dolorum ducimus eveniet nobis eligendi minus. Eligendi numquam, explicabo quam modi magni expedita autem odit quos nemo quod veniam unde optio voluptate ratione tempore tenetur mollitia rem molestias dolor provident?
+Doloremque ducimus veritatis neque aspernatur. Ipsum a modi blanditiis repellat quod, debitis autem non cumque quas sed eligendi, quia commodi eius incidunt aliquam aperiam officiis suscipit, ducimus magnam repellendus dolores?
+Laudantium quis fugit, harum ipsam nam deserunt voluptatum numquam est obcaecati animi alias voluptate iure, maxime expedita nisi molestiae architecto magnam molestias iusto nulla rem? Veritatis ipsum laboriosam impedit cumque!
+Dicta delectus minima repellendus itaque sed corrupti debitis commodi voluptates officia odit? Neque magnam temporibus dolore at pariatur corrupti aspernatur, delectus, labore facere nulla quis nam ut illum omnis voluptatum.
+Quas aliquid, enim accusantium illo, voluptate quis neque, quidem distinctio delectus repellat odit aut. Officia, vel. Ipsum sapiente numquam repellendus, magni hic necessitatibus labore quas officia dolorem perspiciatis. Accusantium, quia.
+Ex, laborum deserunt? Iste aliquid ex incidunt esse quod doloremque perferendis veritatis excepturi quibusdam vero adipisci neque debitis cum recusandae maxime nostrum aliquam voluptatum, a, dolores consequatur aperiam sequi cumque.
+Vel, ab enim eligendi quo quae minus ullam labore animi adipisci officiis nam quas, officia tenetur natus modi consequatur earum iste laborum distinctio numquam voluptatum odit nesciunt porro. Numquam, quas?
+Assumenda corporis, facere praesentium temporibus aperiam eaque illo, vero dolor odit doloremque nisi blanditiis incidunt facilis, quidem hic iusto earum recusandae provident officiis placeat. Perspiciatis eos non dolore a labore!
+Voluptatibus mollitia in eaque, repellendus ipsum suscipit eligendi, aut magni sapiente numquam iure ut delectus hic aperiam, quo illum dolores! Voluptatem quae ullam veniam eveniet aut aliquam consequuntur nihil esse?
+Hic, ex beatae aliquam possimus incidunt ipsam distinctio alias nam praesentium molestiae corrupti fugiat quam magnam quas odit magni. Repellendus id pariatur esse culpa numquam eius facilis recusandae est veniam.
+Modi, possimus. Voluptatem natus laudantium nobis qui saepe, eveniet adipisci ipsum cum aliquam, maiores exercitationem quas earum doloremque perspiciatis dicta iure. Veritatis iure ipsa voluptatibus quo veniam? Consequatur, error repellendus?
+Earum cumque rerum deserunt temporibus, veritatis laudantium corrupti, officiis assumenda mollitia natus, modi sit numquam veniam tempora nobis eius maxime nemo dicta molestiae. Ex eos itaque, labore sint necessitatibus porro.
+Nesciunt suscipit ratione perspiciatis nobis sapiente nihil unde nam autem iusto aperiam modi voluptates ut beatae fugit cupiditate quo, esse voluptatibus, dolore, molestiae ducimus culpa deleniti quidem iste. Nobis, possimus!
+Id vel velit esse voluptas neque ipsa labore minus ratione ad accusantium, cumque, illum ab. Excepturi recusandae maiores maxime, tenetur, optio repellat blanditiis est autem hic, incidunt dolorem consectetur atque!
+Placeat minima cupiditate exercitationem nemo quibusdam mollitia esse rerum tempore beatae. Accusamus nobis harum neque ut reiciendis sunt esse cum molestiae in excepturi quod, ab expedita quidem mollitia cumque aspernatur.
+Iste explicabo dignissimos facilis, aliquid praesentium sit ipsa voluptatem corporis libero. Repellat aut eaque optio asperiores ullam! Consequatur, esse eum quod ullam, suscipit voluptate deleniti possimus beatae tenetur magni in?
+Sit, laudantium qui consequatur perspiciatis repudiandae optio, voluptas autem odio velit ullam amet non voluptatibus facere placeat quo voluptates minus? Animi debitis ex optio pariatur corporis error id delectus voluptatibus?
+Optio aperiam, commodi quam deleniti culpa in dolor officiis repellat id earum molestiae laudantium eius. Ipsam neque iure dicta incidunt beatae reiciendis maiores eius? Eligendi unde illum tempora harum incidunt?
+Nobis fugit inventore, qui iure est tempore, perferendis sequi molestiae nesciunt ex, necessitatibus nisi! Repellendus natus voluptatibus possimus, maxime, illum harum suscipit, iusto magni aut minus enim sint omnis beatae?
+Voluptas qui recusandae optio, earum repellat mollitia natus minima esse harum perspiciatis quam odio sunt doloribus, fuga ea. Saepe velit recusandae temporibus. Beatae eaque quibusdam ducimus facilis ullam esse est?
+Tempora repellendus pariatur ipsa maxime quo vitae incidunt, deleniti laudantium numquam quae necessitatibus quis sequi quia cumque ex maiores velit veritatis possimus dolorum vel voluptas alias reprehenderit? Recusandae, doloribus inventore!
+Molestiae facilis, tenetur, consequatur minus tempora ipsam laborum quasi ab error voluptatum blanditiis ratione fuga quidem possimus labore aliquam adipisci placeat iusto atque dolorem. Sint molestias qui tenetur numquam provident?
+Deleniti aut fugiat doloribus eos maxime iusto veritatis, adipisci, a quis sapiente natus! Neque adipisci distinctio dolorum, possimus aperiam fugiat delectus molestiae dignissimos sunt ullam voluptas asperiores at fuga porro!
+Harum veritatis assumenda fugiat, a eos architecto aliquam! In sunt illo dolorem ab excepturi minus suscipit quasi eius fugiat esse! Odio, deleniti eum! Impedit voluptas eveniet tenetur, neque odio provident.
+Magnam in fugit exercitationem, asperiores beatae accusantium recusandae reiciendis quae natus ipsum labore eaque mollitia, sint aperiam ut sapiente, placeat molestias. Odio vitae cupiditate reiciendis natus perferendis rem quos exercitationem!
+Officiis quaerat, voluptatibus debitis ut recusandae natus. Adipisci accusamus doloribus et ipsum possimus voluptatem laboriosam. Vel eveniet aliquam molestias esse, deserunt, officia nulla quos amet culpa earum, tempore voluptates dolores?
+Officia cum tempore optio accusamus? Beatae harum aliquam sapiente nemo placeat ipsa, adipisci ratione quis reprehenderit nostrum veritatis at mollitia voluptatem dolor esse, iure quam facere? Nobis quis quisquam adipisci?
+Dolore aut ipsum eum. Consequatur quos obcaecati hic ut quibusdam, praesentium, magnam voluptates quo doloribus a, ipsa necessitatibus eveniet perspiciatis est debitis dolor soluta mollitia repellendus. Placeat consequuntur perspiciatis repellendus?
+Exercitationem voluptatum ducimus, veniam qui expedita nobis cupiditate earum harum necessitatibus illum placeat consequatur dolor recusandae laboriosam odio deserunt laborum dolore. Suscipit eum repellendus ipsam, ex voluptate labore recusandae! Vel.
+Quo molestias nisi sed possimus expedita eius quia et saepe vel quasi voluptatem inventore voluptatum, necessitatibus vitae eaque aliquam repellendus pariatur atque consequuntur quos aperiam consequatur. Quaerat unde dolores ullam.
+Nobis labore, mollitia consequuntur, officiis sit distinctio commodi nisi itaque illo amet quidem atque rem minima repellendus fugit asperiores aspernatur eveniet pariatur. Facilis consequatur, maxime atque inventore voluptate sunt consectetur.
+Officiis perspiciatis exercitationem aliquid laboriosam, officia recusandae nobis alias repudiandae pariatur assumenda atque, voluptatibus libero commodi ea tempora molestias quod. Odit magni quia vel, dolor ducimus maiores perspiciatis ab delectus.
+Inventore explicabo quam doloremque officiis nemo! Natus voluptas explicabo perferendis totam dolorum nisi repellat! Deleniti nostrum, voluptatem accusantium ratione ea at ipsa, odit in pariatur, dolores et perferendis rerum quam.
+Ut deserunt expedita quidem magni qui, molestiae itaque! Ex provident, delectus quidem quia aliquid veniam optio veritatis quam fugit error dolorem iure, voluptatibus accusantium voluptas! Nihil quae debitis illo odio?
+Similique, qui. Temporibus dolor beatae consequuntur aperiam dolores rem quisquam numquam laborum est nobis, amet quibusdam, commodi obcaecati alias dicta deleniti ea eius autem dolorem quae! Nostrum, in. Pariatur, necessitatibus?
+Rem aliquid, obcaecati consequatur harum aut dolore ratione, iusto corporis laudantium unde natus! Quibusdam numquam a amet fugiat, nam, possimus nisi, pariatur optio distinctio asperiores sit quos quis temporibus voluptas?
+Sequi qui vero maxime esse dignissimos natus, dolorem aut quo a delectus voluptas numquam facilis debitis, omnis similique sapiente, adipisci rem harum itaque alias pariatur! Nesciunt consequuntur ipsam quam hic.
+Tempora qui necessitatibus quibusdam eum aut praesentium nihil. Aliquam impedit, odit temporibus vero tempora veniam molestiae in veritatis debitis officiis aperiam? Asperiores expedita quaerat ipsam praesentium dicta tenetur voluptatibus numquam.
+Reprehenderit doloribus rem odit autem impedit sint. Alias optio maxime adipisci quo quibusdam quos consequuntur dicta qui est ipsam aliquid, asperiores labore sunt numquam sit magni minima voluptatibus fugiat molestias.
+Adipisci, id repellendus quidem consequuntur delectus corrupti? Vel libero praesentium modi at ab nisi aliquam magni, temporibus placeat ducimus eveniet pariatur nesciunt atque facilis, fuga cumque magnam sunt dolorum fugit!
+Unde porro ad, amet dolorem illum repellat temporibus voluptate alias consequuntur harum dolorum omnis suscipit sit cum numquam aut, minus ipsa, ullam distinctio iste maiores eos assumenda. Sunt, explicabo aliquam.
+Quas, veniam debitis? Voluptatem ab voluptatum unde vel natus architecto, deleniti, earum, cumque quae laborum rerum vero quos quisquam. Soluta, iste! Praesentium accusamus provident fuga sint atque dolorum, nostrum iusto!
+Nesciunt at inventore recusandae debitis. Quaerat ipsa atque doloribus corporis quos, eum voluptas quisquam pariatur magni et! Libero autem consequuntur fuga officiis cum similique voluptatibus itaque, labore laborum numquam porro!
+Soluta labore, asperiores repellat, qui sed alias facere quam illum animi voluptates enim, hic expedita obcaecati sunt molestiae suscipit quae quisquam distinctio. Deleniti ad tempora possimus id fugit nesciunt alias!
+Obcaecati perspiciatis vero, totam tempora, adipisci ex laborum odit quam quos fuga unde harum saepe. Qui, exercitationem cum dolor debitis expedita itaque, at nostrum quibusdam perferendis dicta eius consequuntur laboriosam.
+Enim, quas qui eligendi ducimus optio, sint ipsam temporibus ea quibusdam, voluptatem nihil omnis? Temporibus atque deleniti tempora, blanditiis dicta laborum odit. Temporibus, sint? Provident reprehenderit modi molestiae totam ab!
+Iusto eligendi est maiores ipsa! Sequi adipisci suscipit voluptatum recusandae! Obcaecati sequi neque laborum dolorum veniam. Laudantium, saepe! Vel molestiae facere quae ad consequatur quidem voluptate reprehenderit doloremque dolorem a.
+Pariatur maiores, asperiores, vero iste soluta ex suscipit blanditiis eius autem necessitatibus possimus facilis? Rerum excepturi ut sed cupiditate, qui, aliquam nesciunt a quasi pariatur tempora praesentium iusto et blanditiis?
+Sunt reprehenderit tempora officia! Necessitatibus odio minima fugiat ducimus at harum culpa officia, esse mollitia possimus repellendus vitae rem nemo accusamus! Quo reiciendis obcaecati sunt quos asperiores ea alias voluptatibus.
+Fuga veniam nostrum dolorem laboriosam adipisci fugit, hic voluptatum similique reprehenderit recusandae sit architecto saepe ut ab sequi earum impedit quaerat quasi labore repellendus itaque error facilis! Iste, sit voluptate?
+Corrupti possimus autem saepe modi consectetur eius molestiae atque exercitationem amet dolore illum quae, quia aliquid reprehenderit ex soluta consequatur repudiandae officiis iusto harum esse itaque veniam. Quae, culpa minus?
+Distinctio nisi eaque sint debitis fugit similique voluptatum eos, quia earum odit rem corporis doloremque qui ducimus maxime? Enim voluptatum voluptatibus hic accusamus fuga praesentium optio rem aspernatur voluptate minima.
+Iure suscipit reprehenderit officia libero numquam repellendus temporibus veniam consectetur, commodi nemo voluptas eius incidunt. Sint eveniet distinctio obcaecati voluptates minima fugiat, corporis adipisci, corrupti, incidunt architecto asperiores inventore eum!
+Ratione quam necessitatibus nam molestiae, laborum soluta explicabo voluptatibus at ea quo enim eum in, accusamus tempore voluptatem perspiciatis cum, maxime quaerat aut deserunt id voluptatum nostrum ipsa! Saepe, accusamus?
+Optio quis sapiente esse doloribus adipisci quaerat est, tempore voluptas totam at ex omnis quidem, asperiores magni perspiciatis dignissimos aliquid vitae? Incidunt recusandae, eveniet nisi ab iusto itaque dolore et.
+Provident quaerat beatae consequuntur porro corrupti, nobis omnis et quo asperiores soluta sequi rem sed ipsam quod totam fugit ea, mollitia fugiat a maiores hic nemo minus! Sed, aperiam aliquid.
+At reprehenderit non alias recusandae delectus cum eaque saepe quia quo, itaque molestias repellendus. Ipsum modi dolore est doloribus culpa esse temporibus quaerat. Molestiae eius ea, rerum nesciunt optio voluptates.
+Quo sint, et maxime sed ullam, harum eum eius obcaecati quidem ut quasi vitae! Doloremque magni fugiat rerum vitae id, illum, ducimus non beatae nulla nisi iusto molestiae et eum?
+Deleniti reprehenderit rem ducimus eius sit magni assumenda deserunt soluta. Nam et, nobis reprehenderit voluptatum officia a sequi ab labore veritatis adipisci blanditiis libero odit, exercitationem est incidunt cupiditate quisquam!
+Placeat quibusdam impedit soluta harum. Omnis, consequuntur! Cumque rem deleniti eum voluptates nihil tempora dicta aliquid vero alias iste autem rerum quo accusantium magnam inventore, adipisci maiores, doloremque, illum illo.
+Debitis beatae accusamus aliquam qui voluptates officia commodi, quas quis tempore? Molestiae provident pariatur accusamus laudantium labore quis accusantium dolorum doloribus nam ipsam, asperiores, ullam nulla? Reprehenderit inventore incidunt sint!
+Corporis deleniti velit quasi aspernatur quam assumenda in distinctio quidem magni dignissimos praesentium explicabo ea consequuntur quaerat voluptatibus debitis, eos recusandae veniam commodi modi eligendi minima nihil illo laudantium. Ad.
+Odio, voluptate quia eligendi provident suscipit, cumque rem iste similique placeat quae, eos tenetur repudiandae aliquid recusandae repellendus? Dolor vero id vel distinctio reprehenderit ratione quod hic ea, ab beatae!
 <!--end newMethod -->
+
 @@include('./assets/templates/template-footer.html')

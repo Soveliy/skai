@@ -5,7 +5,7 @@ let newSwiper = new Swiper(".prodTizer__slider", {
     //   prevEl: ".swiper-button-prev",
     // },
     speed: 1,
-    loop:true,
+    // loop:true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: true,
@@ -29,15 +29,21 @@ let newSwiper = new Swiper(".prodTizer__slider", {
   newSwiper.setTransition(0)
   $(".prodTizer__slider .swiper-button-next").click(function(){
     newSwiper.slideNext(0);
-    swiper.updateProgress()
+    newSwiper.updateProgress()
 
   })
   $(".prodTizer__slider .swiper-button-prev").click(function(){
     newSwiper.slidePrev(0);
-    swiper.updateProgress()
+    newSwiper.updateProgress()
 
   })
 
+
+  $(".prodTizer-item__list-elem").click(function(){
+
+    newSwiper.slideTo($(this).index(), 0)
+    newSwiper.updateProgress()
+  })
   let tl = gsap.timeline()
   let tl2 = gsap.timeline()
   let tl3 = gsap.timeline()
@@ -92,8 +98,9 @@ let newSwiper = new Swiper(".prodTizer__slider", {
           trigger:".aboutProd__item--pink",
           scrub:true,
           start:'top center',
-          end:"+=100",
+          end:"+=70",
           // ease: "none",
+ 
           toggleClass: {targets: ".aboutProd__images-list", className: "aboutProd__images-list--1"}
       
         }
@@ -108,7 +115,8 @@ let newSwiper = new Swiper(".prodTizer__slider", {
           trigger:".aboutProd__item--blue",
           scrub:true,
           start:'top center',
-          end:"+=50",
+          end:"+=70",
+          // markers:true,
           toggleClass: {targets: ".aboutProd__images-list", className: "aboutProd__images-list--2"}
          
         }
@@ -122,7 +130,8 @@ let newSwiper = new Swiper(".prodTizer__slider", {
           trigger:".aboutProd__item--purple",
           scrub:true,
           start:'top center',
-          end:"+=50",
+          end:"+=70",
+      
           toggleClass: {targets: ".aboutProd__images-list", className: "aboutProd__images-list--3"}
         }
       });
@@ -136,8 +145,8 @@ let newSwiper = new Swiper(".prodTizer__slider", {
           trigger:".aboutProd__item--orange",
           scrub:true,
           start:'top center',
-          end:"+=50",
-         
+          end:"+=70",
+       
           toggleClass: {targets: ".aboutProd__images-list", className: "aboutProd__images-list--4"}
         }
       });
